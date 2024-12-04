@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>taller entregable 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+         
+		 
+        
+       
+         // declaro tres variables
+		  let num1 = 20;
+		  let num2 = 2;
+		  let oper = "suma";
+		  function realizaroperacion(num1, num2, oper) {
+		  	if(oper == "suma"){
+		  		return num1+num2;
+		  	}else if(oper == "resta"){
+		  		return num1-num2;
+		  	}
+		  	else if(oper == "multiplicacion"){
+		  		return num1*num2;
+		  	}
+		  	else if(oper == "division"){
+		  		if (num2 == 0)
+		  			return "nose puede"
+		  		else{
+		  		return num1/num2;
+		  	}
+		  
+		  	}
+		    }
+		    while(oper !="salir"){
+		    	oper = prompt("ingresar operaciones");
+		  let resultado = realizaroperacion(num1, num2, oper);
+		  console.log(resultado);
+		  }
+		    console.log("saliendo de la calculadora,gracias");
+	</script>
+
+</body>
+</html
